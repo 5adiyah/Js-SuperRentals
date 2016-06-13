@@ -2,12 +2,17 @@
 
 module.exports = function(environment) {
   var ENV = {
+    firebase: {
+      apiKey: "AIzaSyBwdo3FAJRAhK70EDVi-iI4I9e0lud82Rs",
+      authDomain: "super-rentals-dd0ac.firebaseapp.com",
+      databaseURL: "https://super-rentals-dd0ac.firebaseio.com",
+      storageBucket: "super-rentals-dd0ac.appspot.com",
+    },
     modulePrefix: 'super-rentals',
     environment: environment,
-    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: 'https://super-duper-rentals-a9c36.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
+
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

@@ -7,5 +7,5 @@ export default Model.extend({
   city: belongsTo('city', { async: true }),
   type: attr(),
   image: attr(),
-  bedrooms: attr()
+  bedrooms: attr(),
 });
