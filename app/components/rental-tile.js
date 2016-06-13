@@ -3,11 +3,11 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   isImageShowing: false,
   actions: {
-    imageShow: function(){
+    imageShow: function() {
       this.set('isImageShowing', true);
     },
-    imageHide: function(){
-      this.set('isImageShowing', false);
-    }
+    imageHide: function() {
+     this.set('isImageShowing', false);
+   }
   }
 });

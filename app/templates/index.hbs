@@ -3,20 +3,22 @@
 We hope you find exactly what you're looking for in a place to stay.
 
 <ul>
-  {{#each model as |rental|}}
-     {{rental-tile rental=rental}} <!-- rental on the left of the = refers to the variable name used within the component and the rental on the right refers to the model object we're assigning this variable to. -->
+  {{#each model.rentals as |rental|}}
+     {{rental-tile rental=rental}}
   {{/each}}
 </ul>
 
-<!-- # Example of alternate variable names. This code will *not* be used in the application we're currently creating together!
+<h2> Cities </h2>
 
 <ul>
-  {{#each model as |rental-from-template|}}
-    {{rental-tile rental-in-component=rental-from-template}}
+  {{#each model.cities as |city|}}
+    <li>{{#link-to 'city' city.id}}{{city.name}}{{/link-to}}</li>
   {{/each}}
-</ul> -->
+</ul>
 
-{{new-rental save2="save3"}}
+{{new-city saveCity="saveCity"}}
+
+<hr>
 
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
